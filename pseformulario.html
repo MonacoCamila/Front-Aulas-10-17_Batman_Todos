@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="Aula16-FrontEnd-Batman-Forms\css\pseformulario.css" rel="stylesheet">
+
+    <title>PseudoSeletores - Aula 17</title>
+</head>
+<body>
+
+ <header>
+     <div class="descontos">
+         20% desconto em todos os produtos
+     </div>
+     <div class="loja">
+         <img src="Aula16-FrontEnd-Batman-Forms\img\OBJECTS.png" alt="logo loja">
+         Loja dos Super Herois 
+     </div>
+
+     <nav class="menu">
+         <ul>
+             <li>Contato</li>
+             <li>Registro</li>
+             <li>Login</li>
+         </ul>
+     </nav>
+ </header> 
+
+ <main>
+
+    <div class="superbox">
+        <div class="formulario">
+            
+            <form action="" method="post">
+
+                <h1>Chapolin Colorado</h1>  
+
+                <fieldset class="cardx">
+                    <div>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" name="dataNascimento" id="dataNascimento">
+                    </div>
+
+                    <div class="descricao">
+                        <h4 for="descricao">Descriçào:</h4>
+                        <textarea name="sobre" id="sobre"
+                            placeholder=""></textarea>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="cardx">
+                    <div class="Origem">
+
+                        <h4>Origem</h4>
+                        <select name="caracteristica" id="caracteristica">
+                            
+                            <optgroup label="Origem"> 
+                                <option value="none"> <span> Selecione </span></option>
+                                <option value="Brasil"> <span> Brasil </span></option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Desconhecido">Desconhecido</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="foto">Adicionar foto: </label>
+                        <input type="file" name="foto" id="foto" placeholder="arquivo.jpeg" required>
+                    </div>
+
+                    <div class="poderes">
+                        <h4>Super Poderes</h4>
+
+
+                        <div>
+                            <input type="checkbox" name="poderes" id="superpoder" value="Marreta">
+                            <label for="poderes"> Marreta Bionica </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="poderes" id="superpoder" value="piluas">
+                            <label for="poderes"> Pilulas de Encolher </label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="poderes" id="superpoder" value="invisibilidade">
+                            <label for="poderes"> Invisibilidade </label>
+                        </div>                       
+
+                    </div>
+
+                    <div class="tipo">
+                        <h4>Tipo de Personagem</h4>
+
+
+                        <div>
+                            <input type="radio" name="tipo" id="tipope" value="Heroi">
+                            <label for="tipope">Heroi </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="tipo" id="tipope" value="Vilao">
+                            <label for="tipope"> Vilao </label>
+
+                        </div>
+                
+                </fielset>
+
+                <div class="button">
+                    <input type="submit" value="Adicionar">
+                </div> 
+
+            </form>
+
+        </div>
+    </div>    
+
+ </main>
+   
+ <footer class="rodape">
+     <p>Todos os direitos reservados a Front End 1</p>
+ </footer>
+    
+</body>
+</html>
